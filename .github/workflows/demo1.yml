@@ -1,5 +1,9 @@
 name: hello-world
-'on': push
+
+on:
+  push:  # Runs on push events
+  workflow_dispatch:  # Allows manual triggering
+
 jobs:
   my-job:
     runs-on: ubuntu-latest
